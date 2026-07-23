@@ -1,0 +1,13 @@
+generated: '2026-07-17'
+method: searched
+host: https://anzen.com
+documents:
+- path: /.well-known/security.txt
+  status: 404
+note: >-
+  No /.well-known discovery documents are published on anzen.com. Anzen is a
+  commercial-insurance SaaS marketing/product site with no public developer API,
+  so OIDC/OAuth authorization-server, api-catalog, and ai-plugin discovery
+  documents are not applicable. Only /.well-known/security.txt was probed and
+  returned HTTP 404; no WellKnown pointer is emitted because nothing returned
+  200.

@@ -1,7 +1,31 @@
 aid: anzen
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/anzen.png
 name: Anzen
-description: Anzen is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Anzen Technologies builds AI-powered market access software for commercial
+  insurance agencies. Its flagship product, Anzen Pro, automates the commercial
+  insurance quoting workflow: intelligent market matching predicts which
+  carriers are most likely to respond to a submission based on historical
+  quoting data, automated submission routing delivers each submission to a
+  carrier's preferred channel (email, portal, or form), and submission intake
+  extracts data from ACORDs, emails, and PDFs to generate branded client
+  proposals in seconds. Anzen reports recovering roughly 80% of the time agency
+  teams spend on administrative tasks and serves 200+ agencies while reducing
+  errors-and-omissions exposure. The company holds a SOC 2 Type II attestation
+  and anchors its security program on the NIST Cybersecurity Framework. Backed
+  by a16z. No public developer API, documentation, or SDKs are published as of
+  this enrichment pass.
 url: https://raw.githubusercontent.com/api-evangelist/anzen/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,9 +38,42 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Insurance
+- Insurtech
+- Commercial Insurance
+- Insurance Agency
+- Artificial Intelligence
+- Automation
+- SaaS
 apis: []
+common:
+- type: DomainSecurity
+  url: security/anzen-domain-security.yml
+- type: TrustCenter
+  url: security/anzen-trust-center.yml
+- type: Compliance
+  url: https://anzen.com/security
+- type: VulnerabilityDisclosure
+  url: security/anzen-vulnerability-disclosure.yml
+- type: Security
+  url: https://anzen.com/security
+- type: Website
+  url: https://anzen.com
+- type: About
+  url: https://anzen.com/company/about
+- type: Support
+  url: https://anzen.com/company/contact
+- type: PrivacyPolicy
+  url: https://anzen.com/legal/privacy
+- type: LinkedIn
+  url: https://www.linkedin.com/company/goanzen/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

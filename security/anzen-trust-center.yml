@@ -1,0 +1,33 @@
+generated: '2026-07-17'
+method: searched
+probe: false
+source: https://anzen.com/security
+url: https://anzen.com/security
+summary: >-
+  Anzen publishes a security page describing a program anchored on the NIST
+  Cybersecurity Framework, a completed SOC 2 Type II audit (by Prescient
+  Assurance), encryption in transit and at rest, access controls, employee
+  security training, and third-party vendor risk assessments. Primary
+  infrastructure provider is Amazon Web Services (AWS).
+certifications:
+- SOC 2 Type II
+frameworks:
+- NIST Cybersecurity Framework
+controls:
+- encryption in transit
+- encryption at rest
+- access controls
+- employee security training
+- third-party vendor risk assessment
+auditor: Prescient Assurance
+evidence:
+- source: https://anzen.com/security
+  keywords:
+  - soc 2 type ii
+  - nist cybersecurity framework
+  - encryption
+  - vendor assessment
+note: >-
+  Verified by direct fetch of the security page; the automated
+  probe-security-programs.py keyword scan missed it because the marketing site
+  renders client-side, so the raw HTML body did not contain the keywords.
